@@ -1,0 +1,158 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.image-carousel {
+    width: 100%;
+    height: 700px;
+    transition: 800ms;
+}
+
+
+.slide img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    transform: translate(3%, -130%);
+    color: #C7B9A5;
+    font-size: calc(0.2rem + 1vw);
+    font-family: 'Overpass', sans-serif;
+    width: 50%;
+    transition: 800ms;
+}
+
+
+.header {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 100;
+    margin: 0;
+    color: #6D6E71;
+}
+
+
+.slick-list {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin: 0;
+    background-color: #F4F3F1;
+}
+
+.slick-track {
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+
+}
+
+.slide {
+    transform: scale(0.7);
+    transition: transform 300ms;
+    opacity: 0.5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+}
+
+.slide:hover {
+    transform: scale(0.72);
+}
+
+.activeSlide {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.activeSlide:hover {
+    transform: scale(1.15);
+}
+
+.scroll-arrow {
+    display: flex;
+    justify-content: center;
+    color: #6D6E71;
+}
+
+
+.arrow {
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    top: 35%;
+    opacity: 88%;
+    border-radius: 100px;
+    width: 3.5vw;
+    /* Adjust the value based on your preference */
+    height: 3.5vw;
+    /* Adjust the value based on your preference */
+    font-size: 1.5vw;
+    /* Adjust the value based on your preference */
+}
+
+.arrow svg {
+    transition: color 300ms;
+}
+
+
+.arrow svg:hover {
+    color: #81A979;
+}
+
+.next {
+    right: calc((100% - 35rem) / 2);
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev {
+    left: calc((100% - 35rem) / 2);
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .next,
+    .prev {
+        top: 33%;
+    }
+
+    .image-carousel {
+        height: 500px;
+        transition: 800ms;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-carousel {
+        height: 400px;
+        transition: 800ms;
+    }
+    
+    .next,
+    .prev {
+        top: 40%;
+    }
+
+    .slick-track {
+        padding-bottom: 6rem;
+        transition: 800ms;
+    }
+
+    .main-header {
+        transform: translate(50%, -130%);
+        align-items: center;
+        transition: 800ms;
+    }
+}

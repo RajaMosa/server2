@@ -1,0 +1,88 @@
+.quote-card-frame-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*background-color: #f4f3f1;*/
+    border-radius: 10px;
+    padding-top: 25px;
+    background-color: rgba(199, 185, 165, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /*
+    border: 1px solid black;
+    */
+    }
+    
+    
+    .quote-card-frame-h1{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+        color: #C7B9A5;
+        font-size: calc(2em + 1em);
+        text-align: start;
+    }
+    
+    .quote-card-frame-h3{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+        color: #C7B9A5;
+        font-size: calc(1.17em + 1em);
+        text-align: start;
+        margin-left: 50px;
+        /*
+        border: 1px solid black;
+        */
+    }
+    
+    .quote-card-frame-description{
+        font-family: 'Lato', sans-serif;
+        color: #6d6e71;
+        text-align: start;
+        line-height: 1.8;
+        margin: 0;
+        max-width: 80%;
+        font-style: italic;
+    }
+
+    .block-quote-frame{
+        /*background: #f4f3f1;*/
+        color: #D7ACC1;
+        padding: 20px;
+        padding-left: 50px;
+        box-sizing: border-box;
+        /*box-shadow: 0 2px 4px rgba(#222222, 0.12);*/
+        position: relative;
+        /*For å kroppe den store quoten*/
+        overflow: hidden;
+        min-height: 120px;
+        margin: 0;
+        width: 100%;
+        /*
+        border: 1px solid black;
+        */
+        width: inherit;
+    }
+
+    .block-quote-frame::before{
+        font-family: Georgia, serif;
+        content: "“";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 5em;
+        color: rgba(215, 172, 193, 0.3);
+        font-weight: normal;
+    }
+
+    .block-quote-frame::after{
+        font-family: Georgia, serif;
+        content: "”";
+        position: absolute;
+        bottom: -110px;
+        line-height: 100px;
+        right: -32px;
+        font-size: 25em;
+        color: rgba(215, 172, 193, 0.3);
+        font-weight: normal;
+    }

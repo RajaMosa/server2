@@ -1,0 +1,27 @@
+.board{
+    position: relative;
+    padding:0;
+    margin: 0;
+    border: 20px solid #96608e;
+    border-radius: 10px;
+    background-color: #f4f3f1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    
+}
+
+button{
+    display: block;
+}
+
+.message{
+    font-family: 'Lato', sans-serif;
+    color: #6d6e71;
+}
+
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
